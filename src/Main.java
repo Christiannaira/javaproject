@@ -3,14 +3,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int myInt = 9;
-        double myDouble = myInt;
+        double myDouble = 0.78d;
+        int myInt = (int) myDouble;
 
-        byte myByte = 2;
-        float myFloat = myByte;
-
-        System.out.println(myByte);
-        System.out.println(myFloat);
+        System.out.println(myDouble);
+        System.out.println(myInt);
 
     }
 
