@@ -3,11 +3,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double myDouble = 0.78d;
-        int myInt = (int) myDouble;
+        int maxScore = 500;
 
-        System.out.println(myDouble);
-        System.out.println(myInt);
+        int userScore = 423;
+
+        float percentage = (float) userScore / maxScore * 100.0f;
+
+        System.out.println("User's percentage is " + percentage);
 
     }
 
