@@ -3,40 +3,32 @@ public class Main {
 
     public static void main(String[] args) {
 
-      int doorCode = 1337;
+        int day = 10;
 
-      if (doorCode == 1337) {
-          System.out.println("Correct code. The door is now open");
-      } else {
-          System.out.println("Wrong code. The door remains closed ");
-      }
+        switch (day) {
 
-      int myNum = 10;
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("none");
 
-      if (myNum > 0) {
-          System.out.println("The value is positive number");
-      } else if (myNum < 0) {
-          System.out.println("The value is a negative number");
-      } else {
-          System.out.println("The value is 0.");
-      }
-
-      int myAge = 25;
-      int votingAge = 18;
-
-      if (myAge >= votingAge) {
-          System.out.println("Old enough to vote!");
-      } else {
-          System.out.println("Not old enough to vote.");
-      }
-
-      int myNum1 = 5;
-
-      if (myNum1 % 2 == 0) {
-          System.out.println(myNum1 + " is even");
-      } else {
-          System.out.println(myNum1 + " is odd");
-      }
+        }
 
     }
 
