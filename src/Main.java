@@ -3,13 +3,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      int number = 2;
 
-        for (String i : cars) {
+      for (int i = 1; i <= 10; i++) {
 
-            System.out.println(i);
+          System.out.println(number + " x " + i + " = " + (number * i));
 
-        }
+      }
+
 
     }
 
