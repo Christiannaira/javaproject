@@ -3,14 +3,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        for (int i = 0; i < 10; i++) {
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        System.out.println(cars[0]);
 
-            if (i == 4) {
-               continue;
-            }
-            System.out.println(i);
+        cars[0] = "Opel";
+        System.out.println(cars[0]);
 
-        }
+        System.out.println(cars.length);
 
     }
 
