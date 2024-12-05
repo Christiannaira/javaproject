@@ -3,17 +3,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
+       int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
 
-        for (int i = 0; i < myNumbers.length; ++i) {
+       for (int[] row : myNumbers) {
 
-            for (int j = 0; j < myNumbers[i].length; ++j) {
+           for (int i : row) {
 
-                System.out.println(myNumbers[i][j]);
+               System.out.println(i);
 
-            }
+           }
 
-        }
+       }
 
     }
 
