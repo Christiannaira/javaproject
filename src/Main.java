@@ -1,15 +1,15 @@
 
 public class Main {
 
-    public static int sum(int k) {
+    public static int sum(int start, int end) {
 
-        if (k > 0) {
+        if (end > start) {
 
-            return k + sum(k - 1);
+            return end + sum(start, end - 1);
 
         } else {
 
-            return 0;
+            return end;
 
         }
 
@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int result = sum(10);
+       int result = sum(5, 10);
         System.out.println(result);
 
     }
