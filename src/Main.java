@@ -1,24 +1,15 @@
 
 public class Main {
 
-    static void checkAge(int age) {
+   static int myMethod(int x) {
 
-        if (age < 18) {
+       return 5 + x;
 
-            System.out.println("Access denied - You are not old enough!");
-
-        } else {
-
-            System.out.println("Access granted - You are old enough!");
-
-        }
-
-    }
+   }
 
     public static void main(String[] args) {
 
-      checkAge(20);
-      checkAge(17);
+        System.out.println(myMethod(10));
 
     }
 
