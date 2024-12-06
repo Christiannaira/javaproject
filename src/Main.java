@@ -1,17 +1,16 @@
 
 public class Main {
 
-    static void myMethod(String fname, int age) {
+    static void myMethod(String firstName, String lastName, float income, int age) {
 
-        System.out.println(fname + " is " + age);
+        System.out.println("Firstname: " + firstName + "\nLastName: " + lastName + "\nIncome: " + income + "\nage: " + age);
 
     }
 
     public static void main(String[] args) {
 
-        myMethod("Liam", 5);
-        myMethod("Jenny", 8);
-        myMethod("Anja", 31);
+        myMethod("Christian", "Naira", 10000, 21);
+
 
     }
 
