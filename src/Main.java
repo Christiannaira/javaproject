@@ -1,17 +1,17 @@
 
 public class Main {
 
-    static void myMethod() {
+    static void myMethod(String fname) {
 
-        System.out.println("I just got executed!");
+        System.out.println(fname + " Refsnes");
 
     }
 
     public static void main(String[] args) {
 
-      myMethod();
-      myMethod();
-      myMethod();
+        myMethod("Liam");
+        myMethod("Jenny");
+        myMethod("Anja");
 
     }
 
