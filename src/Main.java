@@ -1,16 +1,24 @@
 
 public class Main {
 
-    static void myMethod(String firstName, String lastName, float income, int age) {
+    static void checkAge(int age) {
 
-        System.out.println("Firstname: " + firstName + "\nLastName: " + lastName + "\nIncome: " + income + "\nage: " + age);
+        if (age < 18) {
+
+            System.out.println("Access denied - You are not old enough!");
+
+        } else {
+
+            System.out.println("Access granted - You are old enough!");
+
+        }
 
     }
 
     public static void main(String[] args) {
 
-        myMethod("Christian", "Naira", 10000, 21);
-
+      checkAge(20);
+      checkAge(17);
 
     }
 
