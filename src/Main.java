@@ -1,23 +1,24 @@
 
 public class Main {
 
+    public static int sum(int k) {
 
+        if (k > 0) {
 
-    public static void main(String[] args) {
+            return k + sum(k - 1);
 
-        int x = 100;
+        } else {
 
-        System.out.println(x);
-
-        {
-
-            int y = 100;
-
-            System.out.println(y);
+            return 0;
 
         }
 
+    }
 
+    public static void main(String[] args) {
+
+        int result = sum(10);
+        System.out.println(result);
 
     }
 
