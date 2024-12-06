@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(myMethod(10, 20));
-
+        int z = myMethod(5, 3);
+        System.out.println(z);
     }
 
 }
