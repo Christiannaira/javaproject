@@ -1,15 +1,15 @@
 
 public class Main {
 
-   static int myMethod(int x) {
+   static int myMethod(int x, int y) {
 
-       return 5 + x;
+       return x + y;
 
    }
 
     public static void main(String[] args) {
 
-        System.out.println(myMethod(10));
+        System.out.println(myMethod(10, 20));
 
     }
 
