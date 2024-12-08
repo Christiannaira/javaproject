@@ -4,17 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String originalStr = "Hello";
-        String reversedStr = "";
-        System.out.println("Original string: " + originalStr);
+        int[] myArray = {1, 5, 10, 25};
+        int sum = 0;
+        int i;
 
-        for (int i = 0; i < originalStr.length(); i++) {
-
-            reversedStr = originalStr.charAt(i) + reversedStr;
-
+        for (i = 0; i < myArray.length; i++) {
+            sum += myArray[i];
         }
 
-        System.out.println("Reversed string: " + reversedStr);
+        System.out.println("The sum is: " + sum);
 
     }
 
