@@ -1,19 +1,17 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-//        int[] numbers = new int[5];
-        int[] numbers = {5,6,1,2};
+        ArrayList<String> cars = new ArrayList<String>();
 
-        int[] newArray = Arrays.copyOf(numbers, numbers.length);
-
-        Arrays.sort(newArray);
-
-
-        int index = Arrays.binarySearch(newArray, 1);
-        System.out.println(index);
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        System.out.println(cars);
 
     }
 
