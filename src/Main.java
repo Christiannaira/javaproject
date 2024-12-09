@@ -3,13 +3,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-      int number = 6;
+        int myNum = -10;
 
-      if (number % 2 == 0) {
-          System.out.println(number + " is even.");
-      } else {
-          System.out.println(number + " is odd.");
-      }
+        if (myNum > 0) {
+            System.out.println("The value is a positive number.");
+        } else if (myNum < 0) {
+            System.out.println("The value is a negative number");
+        } else {
+            System.out.println("The value is 0.");
+        }
 
     }
 
