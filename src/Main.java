@@ -1,18 +1,13 @@
-enum Level {
-    LOW,
-    MEDIUM,
-    HIGH
-}
 
 public class Main {
 
     public static void main(String[] args) {
 
-      for (Level myVar : Level.values()) {
+        int length = 5;
+        int width = 2;
+        int area = length * width;
 
-          System.out.println(myVar);
-
-      }
+        System.out.println("Area of rectangle: " + area);
 
     }
 
