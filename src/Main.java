@@ -12,8 +12,8 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        for (int i = 0; i < cars.size(); i++) {
-            System.out.println(cars.get(i));
+        for (String i : cars) {
+            System.out.println(i);
         }
 
     }
