@@ -4,16 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        HashMap<String, String> capitalCities = new HashMap<String, String>();
+       HashMap<String, Integer> people = new HashMap<String, Integer>();
 
-        capitalCities.put("England", "London");
-        capitalCities.put("Germany", "Berlin");
-        capitalCities.put("Norway", "Oslo");
-        capitalCities.put("USA", "Washington DC");
+       people.put("John", 32);
+       people.put("Steve", 30);
+       people.put("Angie", 33);
 
-        for (String i : capitalCities.keySet()) {
-            System.out.println(i + ": " + capitalCities.get(i));
-        }
+       for (String i: people.keySet()) {
+           System.out.println("Name: " + i + " Age: " + people.get(i));
+       }
+
 
     }
 
