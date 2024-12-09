@@ -11,9 +11,9 @@ public class Main {
 
         Arrays.sort(newArray);
 
-        for (int i : newArray) {
-            System.out.println(i);
-        }
+
+        int index = Arrays.binarySearch(newArray, 1);
+        System.out.println(index);
 
     }
 
