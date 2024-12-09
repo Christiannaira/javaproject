@@ -1,25 +1,17 @@
-import java.util.ArrayList;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashMap;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
 
-        myNumbers.add(33);
-        myNumbers.add(15);
-        myNumbers.add(20);
-        myNumbers.add(34);
-        myNumbers.add(8);
-        myNumbers.add(12);
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
 
-        Collections.sort(myNumbers);
-
-        for (int i : myNumbers) {
-            System.out.println(i);
-        }
+        System.out.println(capitalCities);
 
     }
 
