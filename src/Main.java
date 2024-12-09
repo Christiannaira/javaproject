@@ -11,8 +11,8 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        for (String i : capitalCities.values()) {
-            System.out.println(i);
+        for (String i : capitalCities.keySet()) {
+            System.out.println(i + ": " + capitalCities.get(i));
         }
 
     }
