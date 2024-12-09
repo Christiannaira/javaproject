@@ -9,11 +9,7 @@ public class Main {
 
         int[] newArray = Arrays.copyOf(numbers, numbers.length);
 
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
-        }
-
-        System.out.println("\n");
+        Arrays.sort(newArray);
 
         for (int i : newArray) {
             System.out.println(i);
