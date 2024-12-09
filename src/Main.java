@@ -5,7 +5,10 @@ public class Main {
 
         String myStr = "Hello";
         char[] myArray = myStr.toCharArray();
-        System.out.println(myArray[0]);
+
+        for (char i : myArray) {
+            System.out.println(i);
+        }
 
     }
 
