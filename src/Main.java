@@ -1,23 +1,18 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
+}
 
 public class Main {
 
     public static void main(String[] args) {
 
-        HashMap<String, String> capitalCities = new HashMap<String, String>();
+      for (Level myVar : Level.values()) {
 
-        capitalCities.put("England", "London");
-        capitalCities.put("Germany", "Berlin");
-        capitalCities.put("Norway", "Oslo");
-        capitalCities.put("USA", "Washington DC");
+          System.out.println(myVar);
 
-        for (String i: capitalCities.keySet()) {
-
-            System.out.println("keys: " + i + " value: " + capitalCities.get(i));
-
-        }
+      }
 
     }
 
