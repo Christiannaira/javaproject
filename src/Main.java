@@ -8,11 +8,9 @@ public class Main {
 
         numbers[2] = 10;
 
-        for (int number : numbers) {
+        int arrayLength = numbers.length;
 
-            System.out.println(number);
-
-        }
+        System.out.println(arrayLength);
 
 
 
