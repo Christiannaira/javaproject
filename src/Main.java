@@ -10,8 +10,9 @@ public class Main {
 
         int arrayLength = numbers.length;
 
-        System.out.println(arrayLength);
-
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
 
 
     }
