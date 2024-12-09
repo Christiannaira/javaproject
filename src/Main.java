@@ -12,8 +12,7 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        cars.clear();
-        System.out.println(cars);
+        System.out.println(cars.size());
 
     }
 
