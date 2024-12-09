@@ -11,6 +11,9 @@ public class Main {
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
+
+        cars.add(2, "New");
+
         System.out.println(cars);
 
     }
