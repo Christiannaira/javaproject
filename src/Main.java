@@ -5,16 +5,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<String> cars = new ArrayList<String>();
+       ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+       myNumbers.add(10);
+       myNumbers.add(15);
+       myNumbers.add(20);
+       myNumbers.add(25);
 
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-
-        for (String i : cars) {
-            System.out.println(i);
-        }
+       for (int i : myNumbers) {
+           System.out.println(i);
+       }
 
     }
 
