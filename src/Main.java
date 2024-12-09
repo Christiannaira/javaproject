@@ -1,24 +1,22 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
+        ArrayList<String> cars = new ArrayList<String>();
 
-        int lowestAge = ages[0]; //20
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
 
-        for (int age: ages) {
+        for (String i : cars) {
 
-            if (lowestAge > age) {
-
-                lowestAge = age;
-
-            }
+            System.out.println(i);
 
         }
-
-        System.out.println("The lowest age in the array is: " + lowestAge);
 
     }
 
