@@ -11,8 +11,7 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        capitalCities.clear();
-        System.out.println(capitalCities);
+        System.out.println(capitalCities.size());
 
     }
 
