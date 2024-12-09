@@ -1,18 +1,19 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<String> cars = new ArrayList<String>();
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
 
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
 
-        for (String i : cars) {
+        for (String i: capitalCities.keySet()) {
 
             System.out.println(i);
 
