@@ -1,13 +1,17 @@
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        String myStr = "Hello";
-        char[] myArray = myStr.toCharArray();
+        String[] cars = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
 
-        for (char i : myArray) {
+        Arrays.sort(cars);
+
+        for (String i : cars) {
+
             System.out.println(i);
+
         }
 
     }
