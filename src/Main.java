@@ -3,11 +3,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int length = 5;
-        int width = 2;
-        int area = length * width;
+      int number = 6;
 
-        System.out.println("Area of rectangle: " + area);
+      if (number % 2 == 0) {
+          System.out.println(number + " is even.");
+      } else {
+          System.out.println(number + " is odd.");
+      }
 
     }
 
