@@ -6,19 +6,19 @@ public class Main {
 
         int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
 
-        float avg, sum = 0;
+        int lowestAge = ages[0]; //20
 
-        int length = ages.length;
+        for (int age: ages) {
 
-        for (int age : ages) {
+            if (lowestAge > age) {
 
-            sum += age;
+                lowestAge = age;
+
+            }
 
         }
 
-        avg = sum / length;
-
-        System.out.println("The average age is: " + avg);
+        System.out.println("The lowest age in the array is: " + lowestAge);
 
     }
 
