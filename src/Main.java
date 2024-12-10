@@ -1,33 +1,19 @@
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-       int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
-        System.out.println(myNumbers[1][2]);
-        myNumbers[1][2] = 9;
-        System.out.println(myNumbers[1][2]);
+        ArrayList<String> cars = new ArrayList<String>();
 
-        System.out.println("\n");
-
-        for (int i = 0; i < myNumbers.length; i++) {
-
-            for (int j = 0; j < myNumbers[i].length; ++j) {
-                System.out.println(myNumbers[i][j]);
-            }
-
-        }
-
-        for (int[] row : myNumbers) {
-
-            for (int i : row) {
-
-                System.out.println(i);
-
-            }
-
-        }
-
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        System.out.println(cars.get(0));
+        System.out.println(cars.get(1));
+        System.out.println(cars.get(2));
+        System.out.println(cars.get(3));
 
 
     }
