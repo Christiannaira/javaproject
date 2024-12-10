@@ -29,6 +29,22 @@ public class Main {
         System.out.println(multiDimList);
         System.out.println(multiDimList.get(0).get(1));
 
+        for (ArrayList<Integer> i : multiDimList) {
+
+            System.out.println(i);
+
+        }
+
+        for (ArrayList<Integer> i : multiDimList) {
+
+            for (int j : i) {
+
+                System.out.println(j);
+
+            }
+
+        }
+
     }
 
 }
