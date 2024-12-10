@@ -9,6 +9,8 @@ public class Main {
            System.out.println(myNumbers[10]);
        } catch (Exception e) {
            System.out.println("Something went wrong.");
+       } finally {
+           System.out.println("finally");
        }
 
 
