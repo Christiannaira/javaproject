@@ -1,30 +1,26 @@
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Main {
 
     public static void main(String[] args) {
 
-       ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+        ArrayList<ArrayList<Integer>> multiDimList = new ArrayList<>();
 
-       myNumbers.add(33);
-       myNumbers.add(15);
-       myNumbers.add(20);
-       myNumbers.add(34);
-       myNumbers.add(8);
-       myNumbers.add(12);
+        ArrayList<Integer> row1 = new ArrayList<>();
+        row1.add(1);
+        row1.add(2);
+        row1.add(3);
 
-       for (int i : myNumbers) {
-           System.out.println(i);
-       }
+        ArrayList<Integer> row2 = new ArrayList<>();
+        row2.add(4);
+        row2.add(5);
+        row2.add(6);
 
-        Collections.sort(myNumbers);
+        multiDimList.add(row1);
+        multiDimList.add(row2);
 
-       for (int i : myNumbers) {
-
-           System.out.println(i);
-
-       }
+        System.out.println(multiDimList);
+        System.out.println(multiDimList.get(0).get(1));
 
     }
 
