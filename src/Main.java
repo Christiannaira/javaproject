@@ -3,24 +3,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-        int[] myNum = {10, 20, 30, 40};
+       int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
 
-        System.out.println(cars[0]);
-        System.out.println(myNum[0]);
+       float avg, sum = 0;
 
-        cars[0] = "Opel";
-        System.out.println(cars[0]);
-        System.out.println(cars);
-        System.out.println(cars.length);
+       int length = ages.length;
 
-        for (int i = 0; i < cars.length; i++) {
-            System.out.println(cars[i]);
-        }
+       for (int age : ages) {
+           sum += age;
+       }
 
-        for (String i: cars) {
-            System.out.println(i);
-        }
+       avg = sum / length;
+
+        System.out.println("The average age is: " + avg);
 
     }
 
