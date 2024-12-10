@@ -1,19 +1,26 @@
-import java.util.HashMap;
 
 public class Main {
 
     public static void main(String[] args) {
 
-       HashMap<String, Integer> people = new HashMap<String, Integer>();
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        int[] myNum = {10, 20, 30, 40};
 
-       people.put("John", 32);
-       people.put("Steve", 30);
-       people.put("Angie", 33);
+        System.out.println(cars[0]);
+        System.out.println(myNum[0]);
 
-       for (String i: people.keySet()) {
-           System.out.println("Name: " + i + " Age: " + people.get(i));
-       }
+        cars[0] = "Opel";
+        System.out.println(cars[0]);
+        System.out.println(cars);
+        System.out.println(cars.length);
 
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
+        }
+
+        for (String i: cars) {
+            System.out.println(i);
+        }
 
     }
 
