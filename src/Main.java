@@ -1,41 +1,30 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<String> cars = new ArrayList<String>();
+       ArrayList<Integer> myNumbers = new ArrayList<Integer>();
 
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-        System.out.println(cars.get(0));
-        System.out.println(cars.get(1));
-        System.out.println(cars.get(2));
-        System.out.println(cars.get(3));
+       myNumbers.add(33);
+       myNumbers.add(15);
+       myNumbers.add(20);
+       myNumbers.add(34);
+       myNumbers.add(8);
+       myNumbers.add(12);
 
-        cars.add(0, "First");
-        System.out.println(cars);
+       for (int i : myNumbers) {
+           System.out.println(i);
+       }
 
-        cars.set(0, "Opel");
-        System.out.println(cars);
+        Collections.sort(myNumbers);
 
-        cars.remove(0);
-        System.out.println(cars);
+       for (int i : myNumbers) {
 
-//        cars.clear();
+           System.out.println(i);
 
-        System.out.println(cars.size());
-
-        for (int i = 0; i < cars.size(); i++) {
-            System.out.println(cars.get(i));
-        }
-
-        for (String i : cars) {
-            System.out.println(i);
-        }
-
+       }
 
     }
 
