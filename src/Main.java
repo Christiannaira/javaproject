@@ -19,6 +19,13 @@ public class Main {
         multiDimList.add(row1);
         multiDimList.add(row2);
 
+        ArrayList<Integer> row3 = new ArrayList<>();
+        row3.add(7);
+        row3.add(8);
+        row3.add(9);
+
+        multiDimList.add(row3);
+
         System.out.println(multiDimList);
         System.out.println(multiDimList.get(0).get(1));
 
