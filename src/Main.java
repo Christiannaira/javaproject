@@ -3,23 +3,32 @@ public class Main {
 
     public static void main(String[] args) {
 
-       int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
+       int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
+        System.out.println(myNumbers[1][2]);
+        myNumbers[1][2] = 9;
+        System.out.println(myNumbers[1][2]);
 
-       int length = ages.length;
+        System.out.println("\n");
 
-       int lowestAge = ages[0];
+        for (int i = 0; i < myNumbers.length; i++) {
 
-       for (int age : ages) {
+            for (int j = 0; j < myNumbers[i].length; ++j) {
+                System.out.println(myNumbers[i][j]);
+            }
 
-           if (lowestAge > age) {
+        }
 
-               lowestAge = age;
+        for (int[] row : myNumbers) {
 
-           }
+            for (int i : row) {
 
-       }
+                System.out.println(i);
 
-        System.out.println("The lowest age in the array is: " + lowestAge);
+            }
+
+        }
+
+
 
     }
 
