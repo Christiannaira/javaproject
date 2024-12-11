@@ -6,10 +6,11 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            File myObj = new File("filename.txt");
+            File myObj = new File("C:\\Users\\USER\\IdeaProjects\\javaproject\\filename2.txt");
 
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
+                System.out.println("Absolute path: " + myObj.getAbsolutePath());
             } else {
                 System.out.println("File already exists.");
             }
