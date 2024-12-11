@@ -1,20 +1,23 @@
-import java.util.ArrayList;
+import java.io.File;
+import java.io.IOException;
 
 public class Main {
 
-    static void checkAge(int age) {
-
-        if (age < 18) {
-            throw new ArithmeticException("Access denied - You must be at least 18 years old.");
-        } else {
-            System.out.println("Access granted - You are old enough!");
-        }
-
-    }
-
     public static void main(String[] args) {
 
-        checkAge(15);
+        try {
+            File myObj = new File("filename.txt");
+
+            if (myObj.createNewFile()) {
+                System.out.println("File created: " + myObj.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+
+        } catch (IOException e) {
+            System.out.println("An error occured.");
+            e.printStackTrace();
+        }
 
     }
 
