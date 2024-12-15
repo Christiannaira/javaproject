@@ -2,13 +2,20 @@
 
 public class Main {
 
-    static void myMethod() {
-        System.out.println("Hello World!");
+    static void myStaticMethod() {
+        System.out.println("static");
+    }
+
+    public void publicMethod() {
+        System.out.println("public");
     }
 
     public static void main(String[] args) {
 
-        myMethod();
+        myStaticMethod();
+
+        Main myObj = new Main();
+        myObj.publicMethod();
 
     }
 
