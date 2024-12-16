@@ -2,18 +2,12 @@ import java.util.Scanner;
 
 public class Main {
 
-    int modelYear;
-    String modelName;
-
-    public Main(int year, String name) {
-        modelYear = year;
-        modelName = name;
-    }
+    final int x = 10;
+    final double PI = 3.14;
 
     public static void main(String[] args) {
 
-        Main myCar = new Main(1969, "Mustang");
-        System.out.println(myCar.modelYear + " " + myCar.modelName);
+
 
     }
 
