@@ -4,11 +4,19 @@ public class Main {
 
     public static void main(String[] args){
 
-      String strA = "batballing is a crime";
-      System.out.println(strA.replace('b', 'c'));
+      String strA = "Learn Java";
+      String strB = "Learn Java";
+      String strC = "Learn Kolin";
+      boolean result;
 
-      String name = "Christian Mercado";
-      System.out.println(name.replace("Mercado", "Naira"));
+      result = strA.equals(strB);
+      System.out.println(result);
+
+      result = strA.equals(strC);
+      System.out.println(result);
+
+      result = strC.equals(strA);
+      System.out.println(result);
 
 
     }
