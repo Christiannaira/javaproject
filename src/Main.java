@@ -4,10 +4,12 @@ public class Main {
 
     public static void main(String[] args){
 
-      String strA = "Kindness is free";
+      String strA = "Java";
+      String strB = "Programming";
 
-      int length = strA.length();
-      System.out.println(strA.length());
+        System.out.println(strA.concat(strB));
+
+        System.out.println(strB.concat(strA));
 
 
     }
