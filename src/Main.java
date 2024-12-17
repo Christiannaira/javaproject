@@ -4,9 +4,12 @@ public class Main {
 
     public static void main(String[] args){
 
-      String strA = "   Program with care  ";
-        System.out.println(strA);
-        System.out.println(strA.trim());
+      String strA = "batballing is a crime";
+      System.out.println(strA.replace('b', 'c'));
+
+      String name = "Christian Mercado";
+      System.out.println(name.replace("Mercado", "Naira"));
+
 
     }
 
