@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args){
 
-      char[] charArray = {'H', 'e', 'l', 'l', 'o'};
-      String str = new String(charArray);
+      char[] charArray = {'p', 'e', 'a', 'c', 'e', 'f', 'u', 'l'};
+      String str = new String(charArray, 2, 3);
 
       System.out.println(str);
 
