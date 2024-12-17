@@ -2,20 +2,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    static void myStaticMethod() {
-        System.out.println("static");
-    }
+    public static void main(String[] args){
 
-    public void myPublicMethod() {
-        System.out.println("public");
-    }
-
-    public static void main(String[] args) {
-
-        myStaticMethod();
-
-        Main myObj = new Main();
-        myObj.myPublicMethod();
+        System.out.println("hello world");
 
     }
 
