@@ -4,9 +4,10 @@ public class Main {
 
     public static void main(String[] args){
 
-      String strA = "BREATHE";
+      String strA = "Kindness is free";
 
-      System.out.println(strA.toLowerCase());
+      int length = strA.length();
+      System.out.println(strA.length());
 
 
     }
