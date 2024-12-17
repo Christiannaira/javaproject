@@ -4,10 +4,9 @@ public class Main {
 
     public static void main(String[] args){
 
-      char[] charArray = {'p', 'e', 'a', 'c', 'e', 'f', 'u', 'l'};
-      String str = new String(charArray, 0, 5);
-
-      System.out.println(str);
+      byte b[] = {70, 114, 101, 101, 100, 111, 109};
+      String s = new String(b);
+      System.out.println(s);
 
 
     }
