@@ -4,7 +4,9 @@ public class Main {
 
     public static void main(String[] args){
 
-       String strGreet = new String("Hello World!");
+       String s = new String();
+
+        System.out.println(s);
 
     }
 
