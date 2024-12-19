@@ -3,14 +3,25 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String myStr = "Hello";
 
         try {
-            String myStr = "Hello";
-            char result = myStr.charAt(10);
-            System.out.println(result);
-        } catch (IndexOutOfBoundsException e) {
+
+            if (myStr.contains("lsl")) {
+
+                System.out.println(true);
+
+            }
+
+        } catch (NumberFormatException e) {
+
             System.out.println("failed");
+
         }
+
+
+
+
 
 
     }
