@@ -3,11 +3,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
-        String myStr2 = "";
+        String myStr1 = "Hello";
+        String myStr2 = "HELLO";
+        String myStr3 = "Another String";
 
-        myStr2 = myStr2.copyValueOf(myStr1, 0, 5);
-        System.out.println("Returned String: " + myStr2);
+        System.out.println(myStr1.equalsIgnoreCase(myStr2));
+        System.out.println(myStr1.equalsIgnoreCase(myStr3));
 
     }
 
