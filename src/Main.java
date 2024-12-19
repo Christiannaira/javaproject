@@ -3,12 +3,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String myStr1 = "Hello";
-        String myStr2 = "HELLO";
-        String myStr3 = "Another String";
+        String myStr = "Hello";
 
-        System.out.println(myStr1.equalsIgnoreCase(myStr2));
-        System.out.println(myStr1.equalsIgnoreCase(myStr3));
+        System.out.println(myStr.endsWith("Hel"));
+        System.out.println(myStr.endsWith("llo"));
+        System.out.println(myStr.endsWith("o"));
 
     }
 
