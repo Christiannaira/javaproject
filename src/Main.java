@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*; // import the java.util package
 
 public class Main {
 
