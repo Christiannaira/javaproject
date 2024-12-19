@@ -1,16 +1,13 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-      String strA = "Java";
-      String strB = "Programming";
+        Person myObj = new Person();
 
-        System.out.println(strA.concat(strB));
-
-        System.out.println(strB.concat(strA));
-
+        myObj.setName("John");
+        System.out.println(myObj.getName());
 
     }
 
