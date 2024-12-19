@@ -3,11 +3,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String myStr = "Hello";
+        String firstName = "John ";
+        String lastName = "Doe ";
 
-        System.out.println(myStr.contentEquals("Hello"));
-        System.out.println(myStr.contentEquals("e"));
-        System.out.println(myStr.contentEquals("Hi"));
+        System.out.println(firstName.concat(lastName));
 
     }
 
