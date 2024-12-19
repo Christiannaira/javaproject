@@ -5,9 +5,9 @@ public class Main {
 
         String myStr = "Hello";
 
-        System.out.println(myStr.endsWith("Hel"));
-        System.out.println(myStr.endsWith("llo"));
-        System.out.println(myStr.endsWith("o"));
+        System.out.println(myStr.startsWith("Hel"));
+        System.out.println(myStr.startsWith("llo"));
+        System.out.println(myStr.startsWith("o"));
 
     }
 
