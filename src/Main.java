@@ -3,9 +3,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String myStr = "Hello World";
-        System.out.println(myStr.toUpperCase());
-        System.out.println(myStr.toLowerCase());
+        char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
+        String myStr2 = "";
+
+        myStr2 = myStr2.copyValueOf(myStr1, 0, 5);
+        System.out.println("Returned String: " + myStr2);
 
     }
 
