@@ -3,8 +3,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String myStr = "Hello planet earth, you are a great planet";
-        System.out.println(myStr.indexOf("e", 5));
+        char[] myArray = {'a', 'b', 'c'};
+
+        System.out.println(String.valueOf(myArray));
+        System.out.println(String.valueOf('A'));
+        System.out.println(String.valueOf(true));
+        System.out.println(String.valueOf(4.5f));
+        System.out.println(String.valueOf(5.2));
+        System.out.println(String.valueOf(12));
+        System.out.println(String.valueOf(1400L));
 
     }
 
