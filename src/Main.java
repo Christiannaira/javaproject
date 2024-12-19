@@ -4,10 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person myObj = new Person();
+        Scanner myObj = new Scanner(System.in);
+        String userName;
 
-        myObj.setName("John");
-        System.out.println(myObj.getName());
+        System.out.println("Enter username");
+        userName = myObj.nextLine();
+
+        System.out.println("Username is: " + userName);
 
     }
 
