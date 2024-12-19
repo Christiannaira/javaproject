@@ -3,11 +3,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String myStr = "Hello";
+        String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        System.out.println(myStr.startsWith("Hel"));
-        System.out.println(myStr.startsWith("llo"));
-        System.out.println(myStr.startsWith("o"));
+        System.out.println(txt.length());
 
     }
 
