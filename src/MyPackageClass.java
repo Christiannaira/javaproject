@@ -1,4 +1,3 @@
-package mypack;
 
 public class MyPackageClass {
 
