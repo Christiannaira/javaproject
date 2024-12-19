@@ -3,10 +3,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String firstName = "John ";
-        String lastName = "Doe ";
+        String myStr = "Split a string by spaces, and also punctuation.";
 
-        System.out.println(firstName.concat(lastName));
+        String regex = "[,\\.\\s]";
+
+        String[] myArray = myStr.split(regex);
+        for (String s: myArray) {
+            System.out.println(s);
+        }
 
     }
 
