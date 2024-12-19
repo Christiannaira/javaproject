@@ -3,12 +3,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String regex = "cat|dog|fish";
+        String myStr = "Hello";
 
-        System.out.println("cat".matches(regex));
-        System.out.println("dog".matches(regex));
-        System.out.println("catfish".matches(regex));
-        System.out.println("doggy bag".matches(regex));
+        System.out.println(myStr.contentEquals("Hello"));
+        System.out.println(myStr.contentEquals("e"));
+        System.out.println(myStr.contentEquals("Hi"));
+
     }
 
 }
