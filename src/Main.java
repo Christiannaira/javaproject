@@ -3,11 +3,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String myStr1 = "Hello";
-        String myStr2 = "";
-
-        System.out.println(myStr1.isEmpty());
-        System.out.println(myStr2.isEmpty());
+        String myStr = "Hello planet earth, you are a great planet";
+        System.out.println(myStr.indexOf("planet"));
 
     }
 
