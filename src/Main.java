@@ -11,10 +11,10 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-
-        cars.remove("Ford");
-        cars.remove(0);
+        cars.removeAll(cars);
         System.out.println(cars);
+
+
 
     }
 
