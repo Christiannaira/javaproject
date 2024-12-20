@@ -18,6 +18,8 @@ public class Main {
 
         brands.addAll(cars);
 
+        brands.clear();
+
         System.out.println(brands);
 
     }
