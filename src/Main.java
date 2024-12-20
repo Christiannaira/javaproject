@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Main {
@@ -10,10 +11,16 @@ public class Main {
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
+        cars.add("Toyota");
 
-        cars.removeAll(cars);
+        ArrayList<String> remove = new ArrayList<String>();
+        remove.add("Volvo");
+        remove.add("Ford");
+        remove.add("Mazda");
+
+        cars.removeAll(remove);
+
         System.out.println(cars);
-
 
 
     }
