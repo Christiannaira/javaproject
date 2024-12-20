@@ -4,11 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] myNum = {50, 10, 25, 1, 17, 99, 13};
+        String[] fruits = {"Banana", "Orange", "Apple", "Mango"};
+        Arrays.fill(fruits, "Kiwi");
 
-        Arrays.sort(myNum, 1, 4);
-
-        for (int i: myNum) {
+        for (String i: fruits) {
             System.out.println(i);
         }
 
