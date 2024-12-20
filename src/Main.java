@@ -11,7 +11,7 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        System.out.println(cars.isEmpty());
+        System.out.println(cars.indexOf("Forsd"));
 
 
     }
