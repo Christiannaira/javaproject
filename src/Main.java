@@ -1,12 +1,17 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        String[] fruits = {"Banana", "Orange", "Apple", "Mango"};
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
 
-        System.out.println(fruits.length);
+        System.out.println(cars);
 
     }
 
