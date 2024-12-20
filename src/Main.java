@@ -5,15 +5,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        list.ensureCapacity(15);
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        for (int i = 1; i<= 15; i++) {
-            list.add(i);
-        }
+        numbers.add(5);
+        numbers.add(9);
+        numbers.add(8);
+        numbers.add(1);
 
-        System.out.println(list);
-
+        numbers.forEach((n) -> {
+            System.out.println(n);
+        });
 
 
     }
