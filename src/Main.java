@@ -11,16 +11,14 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        ArrayList<String> brands = new ArrayList<String>();
-        brands.add("Microsoft");
-        brands.add("W3Schools");
-        brands.add("Apple");
 
-        brands.addAll(cars);
+        ArrayList cars2 = (ArrayList)cars.clone();
+        cars2.set(0, "Toyota");
 
-        brands.clear();
+        System.out.println(cars);
+        System.out.println(cars2);
 
-        System.out.println(brands);
+
 
     }
 
