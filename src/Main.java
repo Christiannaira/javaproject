@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Main {
 
@@ -11,7 +12,11 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        System.out.println(cars.indexOf("Forsd"));
+        Iterator<String> it = cars.iterator();
+
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
 
 
     }
