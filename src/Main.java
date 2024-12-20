@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 
 public class Main {
@@ -12,18 +11,10 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        ListIterator<String> it = cars.listIterator();
 
-        while (it.hasNext()) {
-            System.out.println(it.next());
-        }
-
-        System.out.println("---");
-
-        while (it.hasPrevious()) {
-            System.out.println(it.previous());
-        }
-
+        cars.remove("Ford");
+        cars.remove(0);
+        System.out.println(cars);
 
     }
 
