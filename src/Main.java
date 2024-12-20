@@ -12,11 +12,8 @@ public class Main {
         cars.add("Mazda");
 
 
-        ArrayList cars2 = (ArrayList)cars.clone();
-        cars2.set(0, "Toyota");
-
-        System.out.println(cars);
-        System.out.println(cars2);
+        System.out.println(cars.contains("BMW"));
+        System.out.println(cars.contains("Toyota"));
 
 
 
