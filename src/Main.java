@@ -10,9 +10,7 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        capitalCities.replace("England", "London");
-        capitalCities.replace("Canada", "Ottawa");
-        capitalCities.replace("USA", "New York", "Washington DC");
+        capitalCities.replaceAll((k, v) -> "The capital of " + k + " is " + v);
 
         System.out.println(capitalCities);
 
