@@ -10,9 +10,9 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        capitalCities.remove("USA");
-        capitalCities.remove("Germany", "Berlin");
-        capitalCities.remove("England", "Cambridge");
+        capitalCities.replace("England", "London");
+        capitalCities.replace("Canada", "Ottawa");
+        capitalCities.replace("USA", "New York", "Washington DC");
 
         System.out.println(capitalCities);
 
