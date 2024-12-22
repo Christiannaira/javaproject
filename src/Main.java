@@ -10,11 +10,9 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        HashMap copy = (HashMap)capitalCities.clone();
-        copy.remove("England");
+        capitalCities.compute("England", (k, v) -> v + "(" + k + ")");
 
         System.out.println(capitalCities);
-        System.out.println(copy);
 
     }
 
