@@ -10,7 +10,8 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        System.out.println(capitalCities.get("England"));
+        System.out.println(capitalCities.getOrDefault("England", "Unknown"));
+        System.out.println(capitalCities.getOrDefault("Canada", "Unknown"));
 
 
     }
