@@ -10,9 +10,7 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        capitalCities.forEach((k, v) -> {
-            System.out.println(k + " -> " + v);
-        });
+        System.out.println(capitalCities.get("England"));
 
 
     }
