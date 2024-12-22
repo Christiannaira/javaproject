@@ -10,7 +10,11 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        System.out.println(capitalCities.keySet());
+        capitalCities.merge("Canada", "Ottawa", (a, b) -> a + " -> " + b);
+        capitalCities.merge("England", "London", (a, b) -> a + " -> " + b);
+        capitalCities.merge("Germany", "Berlin", (a, b) -> a + " -> " + b);
+
+        System.out.println(capitalCities);
 
 
     }
