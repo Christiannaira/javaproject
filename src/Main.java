@@ -10,7 +10,11 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
+        HashMap<String, String> moreCities = new HashMap<String, String>();
+        moreCities.put("Canada", "Ottawa");
+        moreCities.put("Japan", "Tokyo");
 
+        capitalCities.putAll(moreCities);
         System.out.println(capitalCities);
 
 
