@@ -10,7 +10,7 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        capitalCities.computeIfAbsent("Canada", (k) -> "Toronto (" + k + ")");
+        capitalCities.computeIfPresent("England", (k, v) -> v + "(" + k + ")");
 
         System.out.println(capitalCities);
 
