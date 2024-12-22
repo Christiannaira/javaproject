@@ -10,9 +10,9 @@ public class Main {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
 
-        capitalCities.computeIfPresent("England", (k, v) -> v + "(" + k + ")");
+        System.out.println(capitalCities.containsKey("England"));
+        System.out.println(capitalCities.containsKey("Canada"));
 
-        System.out.println(capitalCities);
 
     }
 
