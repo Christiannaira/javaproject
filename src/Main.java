@@ -9,9 +9,12 @@ public class Main {
         capitalCities.put("Germany", "Berlin");
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
-        capitalCities.clear();
+
+        HashMap copy = (HashMap)capitalCities.clone();
+        copy.remove("England");
 
         System.out.println(capitalCities);
+        System.out.println(copy);
 
     }
 
