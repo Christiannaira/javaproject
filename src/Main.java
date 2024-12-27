@@ -14,20 +14,15 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        ArrayList<String> brands = new ArrayList<String>();
-        brands.add("Microsoft");
-        brands.add("W3Schools");
-        brands.add("Apple");
+        ArrayList cars2 = (ArrayList)cars.clone();
+        cars2.set(0, "Toyota");
 
-        brands.addAll(cars);
-
-        System.out.println(brands);
         System.out.println(cars);
-
-
-
+        System.out.println(cars2);
 
 
     }
+
+
 
 }
