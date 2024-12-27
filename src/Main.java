@@ -8,11 +8,17 @@ public class Main {
         //familiarizing myself with Java Lists
         //ArrayList can be modified without creating a new one or copy
 
-//        ArrayList<String> cars = new ArrayList<String>();
-//        cars.add("Volvo");
-//        cars.add("BMW");
-//        cars.add("Ford");
-//        cars.add("Mazda");
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+
+        Collections.sort(cars);
+
+        for (String car: cars) {
+            System.out.println(car);
+        }
 
         ArrayList<Integer> myNumbers = new ArrayList<Integer>();
         myNumbers.add(10);
