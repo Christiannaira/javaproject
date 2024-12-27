@@ -14,8 +14,14 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        cars.clear();
+        ArrayList<String> brands = new ArrayList<String>();
+        brands.add("Microsoft");
+        brands.add("W3Schools");
+        brands.add("Apple");
 
+        brands.addAll(cars);
+
+        System.out.println(brands);
         System.out.println(cars);
 
 
