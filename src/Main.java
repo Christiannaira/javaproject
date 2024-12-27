@@ -1,16 +1,13 @@
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        HashMap<String, String> capitalCities = new HashMap<String, String>();
-        capitalCities.put("England", "London");
-        capitalCities.put("Germany", "Berlin");
-        capitalCities.put("Norway", "Oslo");
-        capitalCities.put("USA", "Washington DC");
+        //familiarizing myself with Java Lists
+        //ArrayList can be modified without creating a new one or copy
 
-        System.out.println(capitalCities.values());
+        ArrayList<String> cars = new ArrayList<String>();
 
 
     }
