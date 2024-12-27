@@ -13,13 +13,7 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        cars.add(0, "Mazda");
-
-        System.out.println(cars);
-        System.out.println(" ");
-        for (String car : cars) {
-            System.out.println(car);
-        }
+        System.out.println(cars.get(0));
 
 
 
