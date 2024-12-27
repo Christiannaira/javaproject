@@ -13,7 +13,7 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        cars.set(0, "Christian");
+        cars.remove(0);
         System.out.println(cars);
 
 
