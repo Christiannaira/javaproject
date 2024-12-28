@@ -9,24 +9,17 @@ public class Main {
         //familiarizing myself with Java Lists
         //ArrayList can be modified without creating a new one or copy
 
-        ArrayList<String> cars = new ArrayList<String>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
 
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
+        list.add(5);
+        list.add(8);
+        list.add(9);
+        list.add(1);
 
-        ListIterator<String> it = cars.listIterator();
+        list.remove(Integer.valueOf(1));
+        list.remove(1);
 
-        while (it.hasNext()) {
-            System.out.println(it.next());
-        }
-
-        System.out.println("---");
-
-        while (it.hasPrevious()) {
-            System.out.println(it.previous());
-        }
+        System.out.println(list);
 
     }
 
