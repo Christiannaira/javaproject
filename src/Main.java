@@ -13,7 +13,7 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        System.out.println(cars.get(0));
+        System.out.println(cars.indexOf("Ford"));
 
 
     }
