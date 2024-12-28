@@ -14,15 +14,8 @@ public class Main {
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
-        cars.add("Ford");
 
-        ArrayList<String> valid = new ArrayList<String>();
-        valid.add("Volvo");
-        valid.add("Ford");
-        valid.add("Mazda");
-
-        cars.retainAll(valid);
-
+        cars.set(0, "Opel");
         System.out.println(cars);
 
     }
