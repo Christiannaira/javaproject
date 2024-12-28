@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Main {
 
@@ -8,14 +7,14 @@ public class Main {
         //familiarizing myself with Java Lists
         //ArrayList can be modified without creating a new one or copy
 
-        ArrayList<String> cars = new ArrayList<String>();
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.ensureCapacity(15);
 
-        System.out.println(cars.contains("BMW"));
-        System.out.println(cars.contains("Toyota"));
+        for (int i = 1; i <= 15; i++) {
+            list.add(i);
+        }
+
+        System.out.println(list);
 
 
     }
