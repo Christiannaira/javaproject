@@ -16,7 +16,7 @@ public class Main {
         numbers.add(6);
         numbers.add(1);
 
-        numbers.removeIf( n -> n % 2 == 0);
+        numbers.replaceAll(n -> n + 1);
         System.out.println(numbers);
 
     }
