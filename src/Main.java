@@ -8,12 +8,15 @@ public class Main {
         //ArrayList can be modified without creating a new one or copy
 
         ArrayList<String> cars = new ArrayList<String>();
+
+        System.out.println(cars.isEmpty());
+
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
 
-        System.out.println(cars.indexOf("Ford"));
+        System.out.println(cars.isEmpty());
 
 
     }
