@@ -9,17 +9,15 @@ public class Main {
         //familiarizing myself with Java Lists
         //ArrayList can be modified without creating a new one or copy
 
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        cars.add("Toyota");
+        cars.removeAll(cars);
 
-        list.add(5);
-        list.add(8);
-        list.add(9);
-        list.add(1);
-
-        list.remove(Integer.valueOf(1));
-        list.remove(1);
-
-        System.out.println(list);
+        System.out.println(cars);
 
     }
 
