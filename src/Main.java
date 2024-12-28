@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Main {
 
@@ -9,14 +10,16 @@ public class Main {
 
         ArrayList<String> cars = new ArrayList<String>();
 
-        System.out.println(cars.isEmpty());
-
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
 
-        System.out.println(cars.isEmpty());
+        Iterator<String> it = cars.iterator();
+
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
 
 
     }
