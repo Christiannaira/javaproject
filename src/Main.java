@@ -16,18 +16,13 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        Spliterator<String> it1 = cars.spliterator();
-        Spliterator<String> it2 = it1.trySplit();
+        Object[] carsArray = cars.toArray();
 
-        System.out.println("First spliterator");
-        while (it1.tryAdvance((n) -> {
-            System.out.println(n);
-        }));
+        for(Object item : carsArray) {
+            System.out.println(item);
+        }
 
-        System.out.println("\nSecond spliterator");
-        while (it2.tryAdvance((n) -> {
-            System.out.println(n);
-        }));
+        
 
     }
 
