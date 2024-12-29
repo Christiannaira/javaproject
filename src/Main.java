@@ -16,9 +16,10 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        Object[] carsArray = cars.toArray();
+        String[] carsArray = new String[4];
+        carsArray = cars.toArray(carsArray);
 
-        for(Object item : carsArray) {
+        for(String item: carsArray) {
             System.out.println(item);
         }
 
