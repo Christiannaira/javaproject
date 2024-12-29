@@ -16,12 +16,8 @@ public class Main {
         cars.add("Ford");
         cars.add("Mazda");
 
-        String[] carsArray = new String[4];
-        carsArray = cars.toArray(carsArray);
-
-        for(String item: carsArray) {
-            System.out.println(item);
-        }
+        cars.trimToSize();
+        System.out.println(cars);
 
         
 
