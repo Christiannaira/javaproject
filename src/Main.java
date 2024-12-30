@@ -1,23 +1,13 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.Spliterator;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        //familiarizing myself with Java Lists
-        //ArrayList can be modified without creating a new one or copy
+        String[] cars = {"Volvo", "BMW", "Tesla"};
+        String[] cars2 = {"Volvo", "BMW", "Teslas"};
 
-        ArrayList<String> cars = new ArrayList<String>();
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-
-        cars.trimToSize();
-        System.out.println(cars);
+        System.out.println(Arrays.compare(cars, cars2));
 
         
 
