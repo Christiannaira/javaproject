@@ -1,15 +1,21 @@
 
 public class Main {
 
-    public String myMethod() {
-        return "Hello World";
+    static void myStaticMethod() {
+        System.out.println("Static methods can be called without creating objects");
+    }
+
+    public void myPublicMethod() {
+        System.out.println("Public methods must be called by creating objects");
     }
 
      public static void main(String[] args) {
 
-        Main myObj = new Main();
+        myStaticMethod();
 
-         System.out.println(myObj.myMethod());
+        Main myObj = new Main();
+        myObj.myPublicMethod();
+
      }
 
 
