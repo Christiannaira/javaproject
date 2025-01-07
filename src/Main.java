@@ -1,15 +1,16 @@
 
 public class Main {
 
-    int x = 5;
+    String fname = "John";
+    String lname = "Doe";
+    int age = 24;
 
     public static void main(String[] args) {
 
         Main myObj1 = new Main();
-        Main myObj2 = new Main();
-        myObj1.x = 25;
-        System.out.println(myObj1.x);
-        System.out.println(myObj1.x);
+
+        System.out.println("Name: " + myObj1.fname + " " + myObj1.lname);
+        System.out.println("Age: " + myObj1.age);
 
     }
 
