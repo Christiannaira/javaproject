@@ -1,14 +1,13 @@
-import java.util.*;
 
 public class Main {
 
+    int x = 5;
+
     public static void main(String[] args) {
 
-        String[] fruits = {"Banana", "Orange", "Apple", "Mango"};
+        Main myObj = new Main();
+        System.out.println(myObj.x);
 
-        System.out.println(fruits.length);
-
-        
 
     }
 
