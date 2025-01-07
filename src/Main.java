@@ -1,12 +1,15 @@
 
 public class Main {
 
-    static void myMethod() {
-        System.out.println("Hello World");
+    public String myMethod() {
+        return "Hello World";
     }
 
      public static void main(String[] args) {
-         myMethod();
+
+        Main myObj = new Main();
+
+         System.out.println(myObj.myMethod());
      }
 
 
