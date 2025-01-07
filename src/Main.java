@@ -1,20 +1,19 @@
 
 public class Main {
 
-    static void myStaticMethod() {
-        System.out.println("Static methods can be called without creating objects");
+    public void fullThrottle() {
+        System.out.println("The car is going as fast as it can!");
     }
 
-    public void myPublicMethod() {
-        System.out.println("Public methods must be called by creating objects");
+    public void speed(int maxSpeed) {
+        System.out.println("Max speed is: " + maxSpeed);
     }
 
      public static void main(String[] args) {
 
-        myStaticMethod();
-
-        Main myObj = new Main();
-        myObj.myPublicMethod();
+        Main myCar = new Main();
+        myCar.fullThrottle();
+        myCar.speed(200);
 
      }
 
