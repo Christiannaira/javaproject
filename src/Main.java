@@ -3,10 +3,13 @@ import java.util.Scanner;
 
 public class Main {
 
+    int x;
+
     public static void main(String[] args) {
 
-        Second myObj = new Second();
-        System.out.println(myObj.x);
+      Main myObj = new Main();
+      myObj.x = 40;
+      System.out.println(myObj.x);
 
     }
 
