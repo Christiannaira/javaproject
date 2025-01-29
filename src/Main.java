@@ -7,7 +7,7 @@ public class Main {
 
     // Create a class constructor for the Main class
     public Main() {
-
+        x = 5;
     }
 
     public static void main(String[] args) {
