@@ -3,17 +3,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public void fullThrottle() {
-        System.out.println("The car is going as fast as it can!");
-    }
-
-    public void speed(int maxSpeed) {
-        System.out.println("Max speed is: " + maxSpeed);
-    }
-
     public static void main(String[] args) {
 
-        Main myCar = new Main();
+        Second myCar = new Second();
         myCar.fullThrottle();
         myCar.speed(200);
 
