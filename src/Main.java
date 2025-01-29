@@ -3,11 +3,17 @@ import java.util.Scanner;
 
 public class Main {
 
+    int x;
+
+    // Create a class constructor for the Main class
+    public Main() {
+
+    }
+
     public static void main(String[] args) {
 
-        Second myCar = new Second();
-        myCar.fullThrottle();
-        myCar.speed(200);
+        Main myObj = new Main();
+        System.out.println(myObj.x);
 
     }
 
