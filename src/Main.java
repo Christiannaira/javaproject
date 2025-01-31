@@ -1,17 +1,20 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class Main {
-
-    final int x = 10;
-    final double PI = 3.14;
 
 
-    public static void main(String[] args) {
+public abstract class Main {
 
-        Main myObj = new Main();
-        System.out.println(myObj.x);
+    public String fname = "John";
+    public int age = 24;
 
+    public abstract void study();
+
+}
+
+class Student extends Main {
+
+    public int graduationYear = 2018;
+
+    public void study() {
+        System.out.println("Studying all day long");
     }
 
 }
