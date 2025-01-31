@@ -1,20 +1,17 @@
-
+import java.util.Scanner;
 
 public abstract class Main {
 
-    public String fname = "John";
-    public int age = 24;
+    public static void main(String[] args) {
 
-    public abstract void study();
+        Scanner myObj = new Scanner(System.in);
+        String userName;
 
-}
+        System.out.println("Enter userName");
+        userName = myObj.nextLine();
 
-class Student extends Main {
+        System.out.println("Username is: " + userName);
 
-    public int graduationYear = 2018;
-
-    public void study() {
-        System.out.println("Studying all day long");
     }
 
 }
