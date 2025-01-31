@@ -7,6 +7,7 @@ public abstract class Main {
       Prog firstName = new Prog();
 
         System.out.println(firstName.fname);
+        firstName.playSound();
 
     }
 
