@@ -14,4 +14,10 @@ public class NewClass {
 
     }
 
+    public void setResult(String newDes){
+
+        this.description = newDes;
+
+    }
+
 }
