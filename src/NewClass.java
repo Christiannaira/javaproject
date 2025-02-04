@@ -1,22 +1,8 @@
 public class NewClass {
 
-    String description = "this is a new class";
+    public String printResult(){
 
-    public NewClass(String des) {
-
-        this.description = des;
-
-    }
-
-    public String getResult(){
-
-        return description;
-
-    }
-
-    public void setResult(String newDes){
-
-        this.description = newDes;
+        return "hello world";
 
     }
 
