@@ -1,24 +1,34 @@
 
 
-class Person {
-    protected String fname = "John";
-    protected String lname = "Doe";
-    protected String email = "john@doe.com";
-    protected int age = 24;
+abstract class Root {
+    public String fname = "John";
+    public int age = 24;
+    public abstract void study();
 }
 
-class Main extends Person {
+class Student extends Root {
 
-    private int graduationYear = 2018;
+    public int grauduationYear = 2018;
+
+    public void study(){
+
+        System.out.println("Studying all day long");
+
+    }
+
+}
+
+class Main {
+
 
     public static void main(String[] args) {
 
-        Main myObj = new Main();
+        Student myObj = new Student();
 
-        System.out.println("Name: " + myObj.fname + " " + myObj.lname);
-        System.out.println("Email: " + myObj.email);
+        System.out.println("Name: " + myObj.fname);
         System.out.println("Age: " + myObj.age);
-        System.out.println("Graduation Year: " + myObj.graduationYear);
+        System.out.println("Graduation Year: " + myObj.grauduationYear);
+        myObj.study();
 
     }
 
