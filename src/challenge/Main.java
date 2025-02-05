@@ -1,49 +1,35 @@
 package challenge;
 
 import java.util.ArrayList;
+import java.util.Arrays; // Import for easier array printing
 
 public class Main {
 
-    // Given an array of integers num and integer target
-    // return indices of the two numbers such that they add up to target.
-    // You may assume that each input would have exactly one solution
-    // And you may not use the same element twice.
-    // You can return the answer in any order
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[] {i, j}; // Return int[] directly
+                }
+            }
+        }
+        return new int[0]; // Return empty int[] if no solution is found
+    }
 
     public static void main(String[] args) {
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
 
-        int[] num = {3,2,4};
-        int target = 6;
+        Main solution = new Main(); // Create an instance of your class
+        int[] result = solution.twoSum(nums, target); // Call the method
 
-        System.out.println(checkNum(num, target));
-
-    }
-
-    public static ArrayList<Integer> checkNum(int[] num, int target){
-
-        ArrayList<Integer> indices = new ArrayList<>();
-
-        for (int i = 0; i < num.length; i++){
-
-            try {
-
-                if ((num[i] + num[i + 1]) == target) {
-
-                    indices.add(i);
-                    indices.add(i + 1);
-
-                }
-
-            } catch (Exception e) {
-
-                break;
-
+        System.out.print("[");
+        for(int i = 0; i < result.length; i++){
+            System.out.print(result[i]);
+            if(i < result.length - 1){
+                System.out.print(", ");
             }
-
         }
-
-        return indices;
-
+        System.out.print("]");
     }
-
 }
