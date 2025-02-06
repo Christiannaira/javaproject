@@ -1,27 +1,31 @@
 
 import java.lang.Character;
 import java.lang.String;
+import java.util.Scanner;
 
 class Main {
 
 
     public static void main(String[] args) {
 
-        String firstName = "Christian";
+        Scanner askUser = new Scanner(System.in);
 
-        for (int i = 0; i < firstName.length(); i++) {
+        System.out.print("Enter your username: ");
+        String userName = askUser.nextLine();
 
-            if (Character.isLetter(firstName.charAt(i))) {
+        for (int i = 0; i < userName.length(); i++) {
 
-                System.out.println(firstName.charAt(i) + " is Letter");
+            if (Character.isLetter(userName.charAt(i))) {
 
-            } else if (Character.isDigit(firstName.charAt(i))) {
+                System.out.println(userName.charAt(i) + " is Letter");
 
-                System.out.println(firstName.charAt(i) + " is Digit");
+            } else if (Character.isDigit(userName.charAt(i))) {
 
-            } else if (Character.isLetterOrDigit(firstName.charAt(i))) {
+                System.out.println(userName.charAt(i) + " is Digit");
 
-                System.out.println(firstName.charAt(i) + " is both Letter and Digit");
+            } else if (Character.isLetterOrDigit(userName.charAt(i))) {
+
+                System.out.println(userName.charAt(i) + " is both Letter and Digit");
 
             }
 
