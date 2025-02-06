@@ -1,18 +1,31 @@
 
 import java.lang.Character;
+import java.lang.String;
 
 class Main {
 
 
     public static void main(String[] args) {
 
-        char letter = 'a';
-        char num = '1';
+        String firstName = "Christian";
 
-        System.out.println(Character.isDigit(num));
-        System.out.println(Character.isLetter(letter));
-        System.out.println(Character.isDigit(letter));
-        System.out.println(Character.isLetter(num));
+        for (int i = 0; i < firstName.length(); i++) {
+
+            if (Character.isLetter(firstName.charAt(i))) {
+
+                System.out.println(firstName.charAt(i) + " is Letter");
+
+            } else if (Character.isDigit(firstName.charAt(i))) {
+
+                System.out.println(firstName.charAt(i) + " is Digit");
+
+            } else if (Character.isLetterOrDigit(firstName.charAt(i))) {
+
+                System.out.println(firstName.charAt(i) + " is both Letter and Digit");
+
+            }
+
+        }
 
 
     }
