@@ -6,11 +6,14 @@ class Main {
 
     public static void main(String[] args) {
 
-        char firstLetter = 'a';
-        char secondLetter = 'A';
+        char letter = 'a';
+        char num = '1';
 
-        System.out.println(Character.isLowerCase(firstLetter));
-        System.out.println(Character.isLowerCase(secondLetter));
+        System.out.println(Character.isDigit(num));
+        System.out.println(Character.isLetter(letter));
+        System.out.println(Character.isDigit(letter));
+        System.out.println(Character.isLetter(num));
+
 
     }
 
