@@ -3,7 +3,8 @@ class OuterClass {
 
     int x = 10;
 
-    class InnerClass {
+    // can't access outside of the class
+    private class InnerClass {
         int y = 5;
     }
 
@@ -14,8 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
             OuterClass myOuter = new OuterClass();
-            OuterClass.InnerClass myInner = myOuter.new InnerClass();
-            System.out.println(myInner.y + myOuter.x);
+            System.out.println(myOuter.x);
 
     }
 
