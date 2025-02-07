@@ -15,18 +15,14 @@ class Main {
 
         for (int i = 0; i < userName.length(); i++) {
 
-            if (Character.isLetter(userName.charAt(i))) {
-
-                System.out.println(userName.charAt(i) + " is Letter");
-
+            if (Character.isUpperCase(userName.charAt(i))) {
+                System.out.println(userName.charAt(i) + " is uppercase");
+            } else if (Character.isLowerCase(userName.charAt(i))) {
+                System.out.println(userName.charAt(i) + " is lowercase");
+            } else if (Character.isWhitespace(userName.charAt(i))) {
+                System.out.println(userName.charAt(i) + " is whitespace");
             } else if (Character.isDigit(userName.charAt(i))) {
-
-                System.out.println(userName.charAt(i) + " is Digit");
-
-            } else if (Character.isLetterOrDigit(userName.charAt(i))) {
-
-                System.out.println(userName.charAt(i) + " is both Letter and Digit");
-
+                System.out.println(userName.charAt(i) + " is digit");
             }
 
         }
