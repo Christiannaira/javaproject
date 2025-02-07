@@ -6,38 +6,68 @@ import java.lang.String;
 
 public class GeneratePassword {
 
-    public void checkPassword(String userPassword) {
+    public boolean checkPassword(String password) {
 
+        boolean upperCase = false;
+        boolean lowerCase = false;
+        boolean digit = false;
 
-        for (int i = 0; i < userPassword.length(); i++) {
+        if (password.length() >= 8) { //Minimum 8 characters
 
-            if (Character.isDigit(userPassword.charAt(i))) {
+            for (int i = 0; i < password.length(); i++) {
 
-                System.out.print(userPassword.charAt(i) + " " + true);
+                char ch = password.charAt(i); // more efficient to get char once
 
-            } else {
-
-                System.out.print(userPassword.charAt(i) + " ");
+                if (Character.isDigit(ch)) {
+                    digit = true;
+                } else if (Character.isUpperCase(ch)) {
+                    upperCase = true;
+                } else if (Character.isLowerCase(ch)) {
+                    lowerCase = true;
+                }
 
             }
 
+            if (upperCase && lowerCase && digit) {
+                System.out.println("You successfully generated a password!");
+            } else {
+                System.out.println("Your password should include 1 uppercase, 1 lowercase, and 1 digit.");
+                return false;
+            }
+
+            return true;
+
+        } else {
+            System.out.println("Password should be at least 8 characters.");
+            return false;
         }
-
-
 
     }
 
     public static void main(String[] args) {
 
-        Scanner askUser = new Scanner(System.in); // initialization of scanner
+        Scanner askUser = new Scanner(System.in); //One Scanner Object
+        GeneratePassword checker = new GeneratePassword();
 
-        System.out.print("Enter your Preferred Password: "); // prompt the user to enter his preferred password
-        String userPassword = askUser.nextLine(); // store the user input value in this variable
+        while (true) { // cleaner loop
 
-        GeneratePassword genPass = new GeneratePassword(); // create an instance of the GeneratePassword class
+            System.out.println("Create your password: ");
+            String password = askUser.nextLine();
 
-        genPass.checkPassword(userPassword);
+            if (password.isEmpty()) {
+                System.out.println("Your password is not accepted");
+            } else {
+                if (checker.checkPassword(password)) {
+
+                    break;
+
+                }
+
+            }
+
+        }
 
     }
+
 
 }
