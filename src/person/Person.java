@@ -1,5 +1,10 @@
 package person;
 
+// Implement a superclass Person. Make two classes, Student and Instructor, that inherit
+// from Person. A person has a name and a year of birth. A student has a major, and an instructor has a salary.
+// Write the class declarations, the constructors, and the methods to toString for all classes.
+// Supply a test program that tests these classes and methods.
+
 // Superclass or Parent class
 public class Person {
 
@@ -10,6 +15,15 @@ public class Person {
 
         this.name = name;
         this.birthYear = birthYear;
+
+    }
+
+    public String toString() {
+
+        String personName = "Person's Name: " + name;
+        String personBirthYear = "Person's BirthYear: " + birthYear;
+
+        return personName + " \n" + personBirthYear;
 
     }
 
@@ -42,31 +56,10 @@ public class Person {
         Student student01 = new Student("Albert Martnez", 1988, "BSIT");
         Instructor instructor01 = new Instructor("Sir Domz", 1799, 30000);
 
-        System.out.println("================================================");
-        System.out.println("Student Name: " + student01.getName());
-        System.out.println("Student BirthYear: " + student01.getBirthYear());
-        System.out.println("Student Major: " + student01.getMajor());
-        System.out.println("================================================");
-        System.out.println("Instructor Name: " + instructor01.getName());
-        System.out.println("Instructor BirthYear: " + instructor01.getBirthYear());
-        System.out.println("Instructor Major: " + instructor01.getSalary());
 
-        student01.setName("Christian Naira");
-        student01.setBirthYear(2003);
-        student01.setMajor("BSIT");
-
-        instructor01.setName("Harly Napay");
-        instructor01.setBirthYear(1973);
-        instructor01.setSalary(20000);
-
-        System.out.println("================================================");
-        System.out.println("Student Name: " + student01.getName());
-        System.out.println("Student BirthYear: " + student01.getBirthYear());
-        System.out.println("Student Major: " + student01.getMajor());
-        System.out.println("================================================");
-        System.out.println("Instructor Name: " + instructor01.getName());
-        System.out.println("Instructor BirthYear: " + instructor01.getBirthYear());
-        System.out.println("Instructor Major: " + instructor01.getSalary());
+        System.out.println(student01);
+        System.out.println("\n============================\n");
+        System.out.println(instructor01);
 
 
     }
@@ -80,6 +73,16 @@ class Student extends Person {
     public Student(String name, int birthYear, String major){
         super(name, birthYear);
         this.major = major;
+    }
+
+    public String toString(){
+
+        String studentName = "Person's Name: " + name;
+        String studentBirthYear = "Person's BirthYear: " + birthYear;
+        String studentMajor = "Student's Major: " + major;
+
+        return studentName + " \n" + studentBirthYear + " \n" + studentMajor;
+
     }
 
     public void setMajor(String major){
@@ -103,6 +106,16 @@ class Instructor extends Person {
     public Instructor(String name, int birthYear, double salary){
         super(name, birthYear);
         this.salary = salary;
+    }
+
+    public String toString() {
+
+        String instructorName = "Person's Name: " + name;
+        String instructorBirthYear = "Person's BirthYear: " + birthYear;
+        String instructorSalary = "Student's Salary: " + salary;
+
+        return instructorName + " \n" + instructorBirthYear + " \n" + instructorSalary;
+
     }
 
     public void setSalary(double salary) {
