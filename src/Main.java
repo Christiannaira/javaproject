@@ -1,16 +1,17 @@
 
-class OuterClass {
+interface Animal {
+    public void animalSound(); // interface method (does not have a body)
+    public void sleep(); // interface method (does not have a body)
+}
 
-    int x = 10;
+class Pig implements Animal {
 
-    class InnerClass {
+    public void animalSound(){
+        System.out.println("The pig says: wee");
+    }
 
-        public int myInnerMethod(){
-
-            return x;
-
-        }
-
+    public void sleep() {
+        System.out.println("Zzz");
     }
 
 }
@@ -19,9 +20,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-            OuterClass myOuter = new OuterClass();
-            OuterClass.InnerClass myInner = myOuter.new InnerClass();
-            System.out.println(myInner.myInnerMethod());
+         Pig myPig = new Pig();
+         myPig.animalSound();
+         myPig.sleep();
 
     }
 
