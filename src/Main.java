@@ -6,19 +6,18 @@ public class Main {
 
         Scanner myObj = new Scanner(System.in);
 
-        System.out.println("Enter name, age and salary: ");
+        try {
 
-        // String input
-        String name = myObj.nextLine();
+            System.out.println("Enter your age: ");
+            int age = myObj.nextInt();
 
-        // Numerical Input
-        int age = myObj.nextInt();
-        double salary = myObj.nextDouble();
+            System.out.println("age: " + age);
 
-        // Output input by user
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Salary: " + salary);
+        } catch (Exception e) {
+
+            System.out.println("error");
+
+        }
 
     }
 
