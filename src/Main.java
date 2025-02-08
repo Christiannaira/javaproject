@@ -1,22 +1,16 @@
-
-
+import java.util.Scanner;
 
 public class Main {
 
-    enum Level {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
-
     public static void main(String[] args) {
 
+        Scanner myObj = new Scanner(System.in);
+        String userName;
 
-        for (Level myVar : Level.values()) {
+        System.out.println("Enter username");
+        userName = myObj.nextLine();
 
-            System.out.println(myVar);
-
-        }
+        System.out.println("Username is: " + userName);
 
     }
 
