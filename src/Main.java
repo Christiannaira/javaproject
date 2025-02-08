@@ -1,32 +1,16 @@
 
-interface FirstInterface {
-    public void myMethod();
+enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
 }
-
-interface SecondInterface {
-    public void myOtherMethod();
-}
-
-class DemoClass implements FirstInterface, SecondInterface {
-
-    public void myMethod() {
-        System.out.println("Some text...");
-    }
-
-    public void myOtherMethod(){
-        System.out.println("Some other text...");
-    }
-
-}
-
 
 public class Main {
 
     public static void main(String[] args) {
 
-        DemoClass myObj = new DemoClass();
-        myObj.myMethod();
-        myObj.myOtherMethod();
+        Level myVar = Level.HIGH;
+        System.out.println(myVar);
 
     }
 
