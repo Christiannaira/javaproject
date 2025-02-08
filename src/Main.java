@@ -5,12 +5,20 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner myObj = new Scanner(System.in);
-        String userName;
 
-        System.out.println("Enter username");
-        userName = myObj.nextLine();
+        System.out.println("Enter name, age and salary: ");
 
-        System.out.println("Username is: " + userName);
+        // String input
+        String name = myObj.nextLine();
+
+        // Numerical Input
+        int age = myObj.nextInt();
+        double salary = myObj.nextDouble();
+
+        // Output input by user
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
 
     }
 
