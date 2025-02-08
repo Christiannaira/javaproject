@@ -1,28 +1,32 @@
 
-interface Animal {
-    public void animalSound(); // interface method (does not have a body)
-    public void sleep(); // interface method (does not have a body)
+interface FirstInterface {
+    public void myMethod();
 }
 
-class Pig implements Animal {
+interface SecondInterface {
+    public void myOtherMethod();
+}
 
-    public void animalSound(){
-        System.out.println("The pig says: wee");
+class DemoClass implements FirstInterface, SecondInterface {
+
+    public void myMethod() {
+        System.out.println("Some text...");
     }
 
-    public void sleep() {
-        System.out.println("Zzz");
+    public void myOtherMethod(){
+        System.out.println("Some other text...");
     }
 
 }
+
 
 public class Main {
 
     public static void main(String[] args) {
 
-         Pig myPig = new Pig();
-         myPig.animalSound();
-         myPig.sleep();
+        DemoClass myObj = new DemoClass();
+        myObj.myMethod();
+        myObj.myOtherMethod();
 
     }
 
