@@ -1,7 +1,6 @@
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.File; // get the File class from java.io package
+import java.io.IOException;// get the IOException class from java.io package
 
 public class Main {
 
@@ -9,12 +8,26 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File myObj = new File("filename.txt");
+        File newFile = new File("filename.txt"); // create an instance for File class
 
-        if (myObj.delete()) {
-            System.out.println("Deleted the file: " + myObj.getName());
-        } else {
-            System.out.println("Failed to delete the file");
+        // always use handling error to prevent file handling crashing
+        try {
+
+            if (newFile.createNewFile()){ // call the createNewFile method from newFile object to create a new file
+
+                System.out.println("File created: " + newFile.getName()); // use the newFile object to call getName method.
+
+            } else {
+
+                System.out.println("File already exists");
+
+            }
+
+        } catch (IOException e) {
+
+            System.err.println("an error occured");
+            e.printStackTrace(); // it is used for debugging and troubleshooting
+
         }
 
 
