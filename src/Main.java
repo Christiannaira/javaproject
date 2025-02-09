@@ -26,7 +26,6 @@ public class Main {
         } catch (IOException e) {
 
             System.err.println("an error occured");
-            e.printStackTrace(); // it is used for debugging and troubleshooting
 
         }
 
