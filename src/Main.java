@@ -1,23 +1,31 @@
-import java.util.Scanner;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Main {
 
+    // File Handling
+
     public static void main(String[] args) {
 
-        Scanner myObj = new Scanner(System.in);
-
         try {
+            File myObj = new File("filename.txt");
+            if (myObj.createNewFile()) {
 
-            System.out.println("Enter your age: ");
-            int age = myObj.nextInt();
+                System.out.println("File created: " + myObj.getName());
 
-            System.out.println("age: " + age);
+            } else {
 
-        } catch (Exception e) {
+                System.out.println("File already exists.");
 
-            System.out.println("error");
+            }
+
+        } catch (IOException e) {
+
+            System.out.println("An error occured.");
 
         }
+
 
     }
 
