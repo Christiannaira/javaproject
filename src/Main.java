@@ -9,22 +9,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        try {
+        File myObj = new File("filename.txt");
 
-            File myObj = new File("filename.txt");
-            Scanner myReader = new Scanner(myObj);
+        if (myObj.exists()) {
+            System.out.println("File name: " + myObj.getName());
+            System.out.println("Absolute path: " + myObj.getAbsolutePath());
+            System.out.println("Writeable: " + myObj.canWrite());
+            System.out.println("Readable: " + myObj.canRead());
+            System.out.println("File size in bytes: " + myObj.length());
+        } else {
 
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                System.out.println(data);
-            }
-
-            myReader.close();
-
-        } catch (FileNotFoundException e) {
-
-            System.out.println("An error occured.");
-            e.printStackTrace();
+            System.out.println("The file does not exist.");
 
         }
 
