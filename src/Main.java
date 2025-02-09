@@ -1,7 +1,7 @@
 
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
 
@@ -11,14 +11,19 @@ public class Main {
 
         try {
 
-            FileWriter myObj = new FileWriter("filename.txt");
-            myObj.write("Hello World");
-            myObj.close();
-            System.out.println("Successfully wrote to the file!");
+            File myObj = new File("filename.txt");
+            Scanner myReader = new Scanner(myObj);
 
-        } catch (IOException e) {
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                System.out.println(data);
+            }
 
-            System.out.println("An error occurred");
+            myReader.close();
+
+        } catch (FileNotFoundException e) {
+
+            System.out.println("An error occured.");
             e.printStackTrace();
 
         }
