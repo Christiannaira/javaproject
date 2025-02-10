@@ -1,31 +1,43 @@
 
-import java.io.File; // get the File class from java.io package
-import java.io.IOException;// get the IOException class from java.io package
+
 
 public class Main {
 
-    // File Handling
 
     public static void main(String[] args) {
 
-        File newFile = new File("filename.txt"); // create an instance for File class
+        // Looping 01
+//        for (int i = 0; i < 10; i++) {
+//
+//            System.out.println(i);
+//
+//        }
+//
+//        System.out.println("\n");
 
-        // always use handling error to prevent file handling crashing
-        try {
+        // Looping 02
+//        for (int i = 0; i < 10; i++) {
+//
+//            System.out.println(i);
+//
+//            for (int j = 0; j < 5; j++) {
+//
+//                System.out.println(j);
+//
+//            }
+//
+//        }
+//
+//        System.out.println("\n");
 
-            if (newFile.createNewFile()){ // call the createNewFile method from newFile object to create a new file
+        // Looping 03
+        for (int i = 0; i < 5; i++) {
 
-                System.out.println("File created: " + newFile.getName()); // use the newFile object to call getName method.
+            for (int j = 0; j < 5; j++) {
 
-            } else {
-
-                System.out.println("File already exists");
+                System.out.println(i + " " + j + " = " + Integer.parseInt(String.valueOf(i + j)));
 
             }
-
-        } catch (IOException e) {
-
-            System.err.println("an error occured");
 
         }
 
