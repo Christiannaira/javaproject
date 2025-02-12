@@ -1,58 +1,26 @@
-
-
+import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        // Looping 01
-//        for (int i = 0; i < 10; i++) {
-//
-//            System.out.println(i);
-//
-//        }
-//
-//        System.out.println("\n");
+        // JFrame = a GUI window to add components to
 
-        // Looping 02
-//        for (int i = 0; i < 10; i++) {
-//
-//            System.out.println(i);
-//
-//            for (int j = 0; j < 5; j++) {
-//
-//                System.out.println(j);
-//
-//            }
-//
-//        }
-//
-//        System.out.println("\n");
+        JFrame frame = new JFrame(); // creates a frame
+        frame.setVisible(true); // make frame visible
+        frame.setSize(500, 500); // sets the x-dimension and y-dimension of frame
+        frame.setTitle("My First JAVA GUI Program"); // sets title of frame
+        frame.setResizable(false); // make frame visible
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit out of application
 
-        // Looping 03
-//        for (int i = 0; i < 5; i++) {
-//
-//            for (int j = 0; j < 5; j++) {
-//
-//                System.out.println(i + " " + j + " = " + Integer.parseInt(String.valueOf(i + j)));
-//
-//            }
-//
-//        }
+        ImageIcon image = new ImageIcon("src\\dailydev.png"); // creates an ImageIcon
+        frame.setIconImage(image.getImage()); // change the icon of frame
 
-        // Looping 04
-        for (int i = 0; i < 5; i++) {
-
-            System.out.print(i);
-
-            for (int j = i; j < 5; j++) {
-
-                System.out.print(j);
-
-            }
-
-        }
+        frame.getContentPane().setBackground(Color.green);
+        frame.getContentPane().setBackground(new Color(0,0,0)); // change color of background
+        frame.getContentPane().setBackground(new Color(0x123456)); // change color of background
 
 
     }
