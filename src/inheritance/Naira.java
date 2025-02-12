@@ -1,5 +1,8 @@
 package inheritance;
 
+// Christian Naira
+// BSIT102A
+
 // use of superclass
 public class Naira {
 
