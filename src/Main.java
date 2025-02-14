@@ -5,10 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int x = 5;
-        int y = 3;
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                break;
+            }
 
-        System.out.println(x <= y);
+            System.out.println(i);
+        }
 
     }
 
