@@ -9,11 +9,12 @@ public class Main {
 
         while (i < 10) {
 
+            if (i == 4) {
+                i++;
+                continue;
+            }
             System.out.println(i);
             i++;
-            if (i == 4) {
-                break;
-            }
 
         }
 
