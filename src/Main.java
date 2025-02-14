@@ -5,18 +5,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int i = 0;
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        int[] myNum = {10, 20, 30, 40};
 
-        while (i < 10) {
+        System.out.println(cars[0]);
+        System.out.println(cars[1]);
+        System.out.println(cars[2]);
+        System.out.println(cars[3]);
 
-            if (i == 4) {
-                i++;
-                continue;
-            }
-            System.out.println(i);
-            i++;
+        myNum[0] = 20;
 
-        }
+        System.out.println(myNum[0]);
+        System.out.println(myNum[1]);
+        System.out.println(myNum[2]);
+        System.out.println(myNum[3]);
+
+        System.out.println(cars.length);
+
+
 
     }
 
