@@ -5,12 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int maxScore = 500;
 
-        double myDouble = 9.78d;
-        int myInt = (int) myDouble;
+        int userScore = 423;
 
-        System.out.println(myDouble);
-        System.out.println(myInt);
+        float percentage = (float) userScore / maxScore * 100.0f;
+
+        System.out.println(percentage);
 
     }
 
