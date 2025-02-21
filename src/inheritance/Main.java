@@ -17,6 +17,11 @@ class Pig extends Animal {
         System.out.println("The pig says: wee wee");
     }
 
+    public void sleep() {
+        super.sleep();
+        System.out.println("Aaaa");
+    }
+
 }
 
 
