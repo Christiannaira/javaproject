@@ -16,29 +16,36 @@ public class Naira {
 
 }
 
+// version 01 - inherit Naira methods
 class Christian extends Naira {
 
-    @Override
+    @Override // version 02 - overriding methods
     public void getFactOne() {
-        super.getFactOne();
+        super.getFactOne(); // version 03 - using super keyword to call the overridden method from the superclass
+        System.out.println("-> I am 5'5 feet in height");
     }
 
-    @Override
+    @Override // version 02 - overriding methods
     public void getFactTwo() {
-        super.getFactTwo();
+        super.getFactTwo(); // version 03 - using super keyword to call the overridden method from the superclass
+        System.out.println(" ->I love playing guitar instrument and singing");
     }
 
-    @Override
+    @Override // version 02 - overriding methods
     public void getFactThree() {
-        super.getFactThree();
+        super.getFactThree(); // version 03 - using super keyword to call the overridden method from the superclass
+        System.out.println("-> I love writing, reading and making simple and great stories");
     }
 }
+
 
 class Main {
 
     public static void main(String[] args) {
 
-        Christian student = new Christian();
+        Christian student = new Christian(); // create an object of a Christian
+
+        // calls methods from the Christian class
         student.getFactOne();
         student.getFactTwo();
         student.getFactThree();
