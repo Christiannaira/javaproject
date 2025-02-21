@@ -1,26 +1,20 @@
 package inheritance;
 
-class Animal {
-    public void animalSound(){
+interface Animal {
 
-        System.out.println("The animal makes a sound");
+    public void animalSound(); // interface method (does not have a body)
+    public void sleep(); // interface method (does not have a body)
 
-    }
 }
 
-class Pig extends Animal {
+class Pig implements Animal {
 
     public void animalSound() {
         System.out.println("The pig says: wee wee");
     }
-}
 
-class Dog extends Animal {
-
-    public void animalSound() {
-
-        System.out.println("The dog says: bow wow");
-
+    public void sleep(){
+        System.out.println("Zzz");
     }
 
 }
@@ -28,16 +22,9 @@ class Dog extends Animal {
 public class Main {
 
     public static void main(String[] args) {
-
-        Animal myAnimal = new Animal();
-        Animal myPig = new Pig();
-        Animal myDog = new Dog();
-
-        myAnimal.animalSound();
+        Pig myPig = new Pig();
         myPig.animalSound();
-        myDog.animalSound();
-
-
+        myPig.sleep();
     }
 
 }
