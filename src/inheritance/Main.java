@@ -1,32 +1,32 @@
 package inheritance;
 
-interface FirstInterface {
-    public void myMethod(); // interface method
-}
-
-interface SecondInterface {
-    public void myOtherMethod(); // interface method
-}
-
-class DemoClass implements FirstInterface, SecondInterface {
-
-    public void myMethod(){
-        System.out.println("Some text...");
-    }
-
-    public void myOtherMethod(){
-        System.out.println("Some other text...");
+abstract class Animal {
+    // Abstract method (does not have a body)
+    public abstract void animalSound();
+    // Regular method
+    public void sleep() {
+        System.out.println("Zzz");
     }
 
 }
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+    // The body of animalSound() is provided here
+    public void animalSound() {
+        System.out.println("The pig says: wee wee");
+    }
+
+}
+
 
 public class Main {
 
     public static void main(String[] args) {
 
-        DemoClass myObj = new DemoClass();
-        myObj.myMethod();
-        myObj.myOtherMethod();
+        Pig myPig = new Pig(); // Create a Pig object
+        myPig.animalSound();
+        myPig.sleep();
 
     }
 
