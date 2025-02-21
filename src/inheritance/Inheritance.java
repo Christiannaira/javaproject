@@ -1,28 +1,25 @@
 package inheritance;
 
-class Person {
+class Vehicle {
 
-    private String name;
+    protected String brand = "Ford";
+    public void honk() {
 
-    //Getter
-    public String getName() {
-        return name;
-    }
+        System.out.println("Tuut, tuut");
 
-    //Setter
-    public void setName(String newName) {
-        this.name = newName;
     }
 
 }
 
-public class Inheritance {
+final class Inheritance extends Vehicle {
+
+    private String modelName = "Mustang";
 
     public static void main(String[] args) {
 
-        Person myObj = new Person();
-        myObj.setName("John"); // Se the value of the name variable to "John"
-        System.out.println(myObj.getName());
+        Inheritance myFastCar = new Inheritance();
+        myFastCar.honk();
+        System.out.println(myFastCar.brand + " " + myFastCar.modelName);
 
     }
 
